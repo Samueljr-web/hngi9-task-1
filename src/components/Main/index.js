@@ -9,7 +9,7 @@ export default function index({Link}) {
     <div className='main'>
       <div className='profile'>
         <img src={Profile__img} id='profile__img' alt='profile_img' />
-        <h2>Annette Black</h2>
+        <h2>Samuel Adeyemi</h2>
         {/* <a href='' id='slack'>samueljr-web</a> */}
       </div>
       <div className='links'>
