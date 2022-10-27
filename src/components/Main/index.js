@@ -15,7 +15,7 @@ export default function index({Link}) {
       <div className='links'>
         {Link.map((link, id) =>{
           return(
-              <a href={link.href} id={id} target="_blank" rel='noreferrer' className="link_btn" title={link.title}>{link.name}</a>
+              <a href={link.href} id={link.id} key={id} target="_blank" rel='noreferrer' className="link_btn" title={link.title}>{link.name}</a>
           )
         })}
        </div>
