@@ -15,7 +15,6 @@
 }
 .header_text h2{
     font-size: 2rem;
-    text-align: left;
     color: #101828;
 }
 .row-fields{
@@ -46,7 +45,7 @@ input{
   outline: none;
   width: 22rem;
   height: 1.5rem;
-  padding: 8px 14px;
+  padding: 8px 5px;
   border: 1px solid #D0D5DD;
 }
 input[type="email"] {
@@ -64,7 +63,7 @@ textarea{
   border-radius:8px;
   outline: none;
   height: 5rem;
-  padding: 12px 10px;
+  padding: 12px 5px;
   border: 1px solid #D0D5DD;
   resize: none;
 }
@@ -116,7 +115,7 @@ textarea{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 340px;
+        width: 250px;
     }
     .row-fields{
         flex-direction: column;
