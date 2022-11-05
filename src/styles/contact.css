@@ -1,0 +1,150 @@
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+      gap: 48px;
+}
+.header_text{
+    padding-right: 5rem;
+}
+.header_text p{
+    margin-top: 10px;
+    color: #475467;
+}
+.header_text h2{
+    font-size: 2rem;
+    text-align: left;
+    color: #101828;
+}
+.row-fields{
+   display: flex;
+}
+
+.row-fields div{
+    margin: 10px 10px 10px 0;
+}
+
+/* Form Styling */
+.form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus{
+    box-shadow: 0px 0px 0px 4px #D1E9FF;
+}
+textarea:focus{
+    box-shadow: 0px 0px 0px 4px #D1E9FF;
+}
+
+input[type=text]{
+  border-radius: 8px;
+  outline: none;
+  width: 18rem;
+  height: 1.5rem;
+  padding: 8px 15px;
+  border: 1px solid #D0D5DD;
+}
+input[type=email]{
+  border-radius: 8px;
+  outline: none;
+  width:38.8rem;
+  height: 1.5rem;
+  padding: 8px 15px;
+  border: 1px solid #D0D5DD;
+}
+input[type=checkbox]{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+textarea{
+  border-radius:8px;
+  outline: none;
+  width:40rem;
+  height: 5rem;
+  padding: 8px 5px;
+  border: 1px solid #D0D5DD;
+  resize: none;
+}
+::placeholder{
+   color: #667085;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+}
+.field label{
+    margin-bottom: 10px;
+}
+
+.agree{
+    margin-top: 15px;
+    display: flex;
+}
+.agree input{
+    margin-right: 5px;
+}
+.agree p{
+    font-size: 0.9rem;
+    color: #475467;
+}
+.btn_submit{
+  height: 42px;
+  width: 545px;
+  border-radius: 8px;
+  background: #1470ef;
+  box-shadow: 0px 1px 2px 0px #1018280D;
+  color: #ffffff;
+  border: 1px solid #1470ef;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.btn_submit:focus{
+    box-shadow: 0px 0px 0px 4px #D1E9FF;
+}
+
+@media screen and (max-width: 850px) {
+    .contact_form{
+        justify-content: unset;
+        padding-top: 3rem;
+        min-height: auto;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-fields{
+        flex-direction: column;
+    }
+    .field{
+        width: 18rem;
+    }
+    .header_text{
+      padding-right: 0;
+      width: 38%;
+    }
+    .agree {
+        width: 60%;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    input[type=email]{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    .btn_submit{
+        width: 300px;
+    }
+}

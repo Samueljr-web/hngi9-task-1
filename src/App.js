@@ -1,5 +1,9 @@
+import React from 'react';
 import './index.css';
-import {Main, Footer} from './components'
+import {Main, Footer} from './components';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Contact from './pages/contact';
+import NotFound from './pages/404';
 
 function App() {
 
@@ -35,13 +39,20 @@ function App() {
       href: "https://books.zuri.team/design-rules",
       id: "book__design",
     },
+
   ];
   return (
-    <div className="">
-     <Main Link={Links}/>
-     <Footer />
-    </div>
+    <>
+     <Router>
+      <Routes>
+        <Route path='/' element={ <Main Link_btn={Links}/> } />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/*' element={<NotFound />} />
+      </Routes>
+          <Footer />
+     </Router>
+    </>
   );
-}
+} 
 
 export default App;

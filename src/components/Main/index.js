@@ -5,8 +5,9 @@ import Github from '../../assets/github.png'
 import Slack from '../../assets/slack.png'
 import Share_icon from '../../assets/share.png'
 import Ellipses_icon from '../../assets/ellipses.png'
+import { Link } from 'react-router-dom'
 
-export default function index({Link}) {
+export default function index({Link_btn}) {
   return (
     <div className='main'>
       <div className='profile_wrapper'>
@@ -22,11 +23,12 @@ export default function index({Link}) {
       </div>
       
       <div className='links'>
-        {Link.map((link, id) =>{
+        {Link_btn.map((link, id) =>{
           return(
-              <a href={link.href} id={link.id} key={id} target="_blank" rel='noreferrer' className="link_btn" title={link.title}>{link.name}</a>
+              <a href={link.href} id={link.id} key={id} target="_blank" rel='noopener noreferrer' className="link_btn" title={link.title}>{link.name}</a>
           )
         })}
+        <Link to='/contact' id='contact' className='link_btn'>Contact Me</Link>
        </div>
        <div className='social__icons'>
         <a href='/'><img src={Slack} alt="slack-icon"/></a>
