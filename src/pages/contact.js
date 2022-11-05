@@ -36,7 +36,11 @@ function contact() {
           </div>
           <div className="field">
             <label htmlFor='email'>Email</label>
-            <input type="email" placeholder="Yourname@email.com" id="email" />
+            <input 
+              type="email" 
+              placeholder="Yourname@email.com" 
+              id="email" 
+            />
           </div>
           <div className="field">
             <label htmlFor='message'>Message</label>
@@ -48,7 +52,7 @@ function contact() {
           <div className="agree">
             <input type="checkbox" />
             <p>
-              You agree to providing your data to Samuel who may contact you.
+              You agree to providing your data to " Samuel " who may contact you.
             </p>
           </div>
           <button type="submit" id="btn__submit" className="btn_submit">

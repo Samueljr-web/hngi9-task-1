@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-      gap: 48px;
 }
 .header_text{
     padding-right: 5rem;
@@ -21,6 +20,7 @@
 }
 .row-fields{
    display: flex;
+   width: 100%;
 }
 
 .row-fields div{
@@ -41,23 +41,19 @@ textarea:focus{
     box-shadow: 0px 0px 0px 4px #D1E9FF;
 }
 
-input[type=text]{
+input{
   border-radius: 8px;
   outline: none;
-  width: 18rem;
+  width: 22rem;
   height: 1.5rem;
-  padding: 8px 15px;
+  padding: 8px 14px;
   border: 1px solid #D0D5DD;
 }
-input[type=email]{
-  border-radius: 8px;
-  outline: none;
-  width:38.8rem;
-  height: 1.5rem;
-  padding: 8px 15px;
-  border: 1px solid #D0D5DD;
+input[type="email"] {
+    width: 95.5%;
 }
-input[type=checkbox]{
+
+input[type="checkbox"]{
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -67,9 +63,8 @@ input[type=checkbox]{
 textarea{
   border-radius:8px;
   outline: none;
-  width:40rem;
   height: 5rem;
-  padding: 8px 5px;
+  padding: 12px 10px;
   border: 1px solid #D0D5DD;
   resize: none;
 }
@@ -98,7 +93,7 @@ textarea{
 }
 .btn_submit{
   height: 42px;
-  width: 545px;
+  width: 100%;
   border-radius: 8px;
   background: #1470ef;
   box-shadow: 0px 1px 2px 0px #1018280D;
@@ -121,30 +116,32 @@ textarea{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 340px;
     }
     .row-fields{
         flex-direction: column;
-    }
-    .field{
-        width: 18rem;
+        column-gap: 15px;
     }
     .header_text{
-      padding-right: 0;
-      width: 38%;
+      padding: unset;
+      align-items: flex-start;
     }
     .agree {
-        width: 60%;
+        align-items: flex-start;
     }
-    input[type=text]{
+    .field{
         width: 100%;
     }
-    input[type=email]{
+    input{
+        width: 100%;
+    }
+    input[type="email"]{
         width: 100%;
     }
     textarea{
         width: 100%;
     }
     .btn_submit{
-        width: 300px;
+        width: 100%;
     }
 }

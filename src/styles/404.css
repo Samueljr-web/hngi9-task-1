@@ -58,11 +58,11 @@
 
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 600px) {
 .error_container{
     justify-content: center;
-    align-items: center;
-    padding: 10rem 1rem;
+    align-items: flex-start;
+    padding: 10rem 1.5rem;
 }
 
 .action_button{
