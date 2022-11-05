@@ -69,7 +69,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 16rem;
+    width: 100%;
 }
 
 .action_button button{
