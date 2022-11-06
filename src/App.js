@@ -39,6 +39,11 @@ function App() {
       href: "https://books.zuri.team/design-rules",
       id: "book__design",
     },
+    // {
+    //   name: "Contact Me",
+    //   href: "/contact",
+    //   id: "contact",
+    // },
 
   ];
   return (
