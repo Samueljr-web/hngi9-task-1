@@ -6,9 +6,7 @@
     justify-content: center;
     min-height: 100vh;
 }
-.header_text{
-    padding-right: 5rem;
-}
+
 .header_text p{
     margin-top: 10px;
     color: #475467;
@@ -31,6 +29,7 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  width: 32rem;
 }
 
 input:focus{
@@ -43,13 +42,16 @@ textarea:focus{
 input{
   border-radius: 8px !important;
   outline: none;
-  width: 22rem;
+  width: 14.92rem;
   height: 1.5rem;
   padding: 8px 5px;
+  color: #475467;
+  font-size: 16px;
+  font-weight: 500;
   border: 1px solid #D0D5DD !important;
 }
 input[type="email"] {
-    width: 95.5%;
+    width: 97.5%;
 }
 
 input[type="checkbox"]{
@@ -64,11 +66,14 @@ textarea{
   outline: none;
   height: 5rem;
   padding: 12px 5px;
+  color: #728096;
+  font-size: 16px;
+  font-weight: 500;
   border: 1px solid #D0D5DD !important;
   resize: none;
 }
 ::placeholder{
-   color: #667085;
+   color: #728096;
 }
 .field{
     display: flex;
