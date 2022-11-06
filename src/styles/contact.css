@@ -91,7 +91,7 @@ textarea{
 .agree input{
     margin-right: 5px;
 }
-.agree p{
+.agree label{
     font-size: 0.9rem;
     color: #475467;
 }

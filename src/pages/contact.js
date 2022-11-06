@@ -5,6 +5,7 @@ function contact() {
 
   const handleSubmit = (e) => {
    e.preventDefault()
+   alert("sent")
   }
   return (
     <div className="contact">
@@ -23,6 +24,7 @@ function contact() {
                 type="text"
                 placeholder="Enter your first name"
                 id="first_name"
+                required
               />
             </div>
             <div className="field">
@@ -31,6 +33,7 @@ function contact() {
                 type="text"
                 placeholder="Enter your last name"
                 id="last_name"
+                required
               />
             </div>
           </div>
@@ -40,6 +43,7 @@ function contact() {
               type="email" 
               placeholder="Yourname@email.com" 
               id="email" 
+              required
             />
           </div>
           <div className="field">
@@ -47,13 +51,14 @@ function contact() {
             <textarea
               placeholder="Send me a message and I'll reply you as soon as possible..."
               id="message"
+              required
             />
           </div>
           <div className="agree">
-            <input type="checkbox" />
-            <p>
+            <input type="checkbox" id='check' required/>
+            <label htmlFor='check'>
               You agree to providing your data to " Samuel " who may contact you.
-            </p>
+            </label>
           </div>
           <button type="submit" id="btn__submit" className="btn_submit">
             Send Message
