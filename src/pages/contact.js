@@ -57,7 +57,7 @@ function contact() {
           <div className="agree">
             <input type="checkbox" id='check' required/>
             <label htmlFor='check'>
-              You agree to providing your data to " Samuel " who may contact you.
+              You agree to providing your data to Samuel who may contact you.
             </label>
           </div>
           <button type="submit" id="btn__submit" className="btn_submit">

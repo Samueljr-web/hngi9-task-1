@@ -112,7 +112,7 @@ textarea{
 
 @media screen and (max-width: 850px) {
     .contact_form{
-        justify-content: unset;
+        justify-content: center;
         padding-top: 3rem;
         min-height: auto;
     }
